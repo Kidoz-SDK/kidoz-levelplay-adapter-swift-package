@@ -1,0 +1,1 @@
+# levelplay-adapter-swift-package
