@@ -1,0 +1,11 @@
+framework module KidozIronSourceAdapter {
+  umbrella header "KidozIronSourceAdapter.h"
+  export *
+
+  module * { export * }
+}
+
+module KidozIronSourceAdapter.Swift {
+  header "KidozIronSourceAdapter-Swift.h"
+  requires objc
+}

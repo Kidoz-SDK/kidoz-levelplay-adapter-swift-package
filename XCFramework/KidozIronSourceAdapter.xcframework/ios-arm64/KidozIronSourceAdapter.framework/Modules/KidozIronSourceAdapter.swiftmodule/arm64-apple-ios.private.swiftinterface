@@ -1,0 +1,77 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name KidozIronSourceAdapter
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Foundation
+import IronSource
+@_exported import KidozIronSourceAdapter
+import KidozSDK
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc(ISKidozCustomAdapter) public class ISKidozCustomAdapter : IronSource.ISBaseNetworkAdapter, KidozSDK.KidozInitDelegate {
+  @objc override dynamic public func `init`(_ adData: IronSource.ISAdData!, delegate: (any IronSource.ISNetworkInitializationDelegate)!)
+  public func initSDK(adData: IronSource.ISAdData!, delegate: (any IronSource.ISNetworkInitializationDelegate)!)
+  @objc public func onInitSuccess()
+  @objc public func onInitError(_ error: Swift.String)
+  @objc override dynamic public func networkSDKVersion() -> Swift.String!
+  @objc override dynamic public func adapterVersion() -> Swift.String!
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(KidozIronSourceSDKInfo) public class KidozIronSourceSDKInfo : ObjectiveC.NSObject {
+  public static func getSdkVersion() -> Swift.String
+  public static func networkSDKVersion() -> Swift.String
+  public static func adapterSDKVersion() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(ISKidozCustomRewardedVideo) public class ISKidozCustomRewardedVideo : IronSource.ISBaseRewardedVideo, KidozSDK.KidozRewardedDelegate {
+  @objc override dynamic public func loadAd(with adData: IronSource.ISAdData, delegate: any IronSource.ISRewardedVideoAdDelegate)
+  @objc override dynamic public func showAd(with viewController: UIKit.UIViewController, adData: IronSource.ISAdData, delegate: any IronSource.ISRewardedVideoAdDelegate)
+  @objc override dynamic public func isAdAvailable(with adData: IronSource.ISAdData) -> Swift.Bool
+  @objc public func onRewardedAdLoaded(kidozRewardedAd: KidozSDK.KidozRewardedAd)
+  @objc public func onRewardedAdFailedToLoad(kidozError: KidozSDK.KidozError)
+  @objc public func onRewardedAdShown(kidozRewardedAd: KidozSDK.KidozRewardedAd)
+  @objc public func onRewardedAdFailedToShow(kidozRewardedAd: KidozSDK.KidozRewardedAd, kidozError: KidozSDK.KidozError)
+  @objc public func onRewardedImpression(kidozRewardedAd: KidozSDK.KidozRewardedAd)
+  @objc public func onRewardReceived(kidozRewardedAd: KidozSDK.KidozRewardedAd)
+  @objc public func onRewardedAdClosed(kidozRewardedAd: KidozSDK.KidozRewardedAd)
+  @objc override dynamic public init(_ providerConfig: IronSource.ISAdapterConfig)
+  @objc override dynamic public init(adFormat: Swift.String, adapterConfig: IronSource.ISAdapterConfig)
+  @objc override dynamic public init(adFormat: Swift.String, adapterConfig: IronSource.ISAdapterConfig, adUnitObjectId: Foundation.UUID?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(ISKidozCustomInterstitial) public class ISKidozCustomInterstitial : IronSource.ISBaseInterstitial, KidozSDK.KidozInterstitialDelegate {
+  @objc override dynamic public func loadAd(with adData: IronSource.ISAdData, delegate: any IronSource.ISInterstitialAdDelegate)
+  @objc override dynamic public func showAd(with viewController: UIKit.UIViewController, adData: IronSource.ISAdData, delegate: any IronSource.ISInterstitialAdDelegate)
+  @objc override dynamic public func isAdAvailable(with adData: IronSource.ISAdData) -> Swift.Bool
+  @objc public func onInterstitialAdLoaded(kidozInterstitialAd: KidozSDK.KidozInterstitialAd)
+  @objc public func onInterstitialAdFailedToLoad(kidozError: KidozSDK.KidozError)
+  @objc public func onInterstitialAdShown(kidozInterstitialAd: KidozSDK.KidozInterstitialAd)
+  @objc public func onInterstitialAdFailedToShow(kidozInterstitialAd: KidozSDK.KidozInterstitialAd, kidozError: KidozSDK.KidozError)
+  @objc public func onInterstitialImpression(kidozInterstitialAd: KidozSDK.KidozInterstitialAd)
+  @objc public func onInterstitialAdClosed(kidozInterstitialAd: KidozSDK.KidozInterstitialAd)
+  @objc override dynamic public init(_ providerConfig: IronSource.ISAdapterConfig)
+  @objc override dynamic public init(adFormat: Swift.String, adapterConfig: IronSource.ISAdapterConfig)
+  @objc override dynamic public init(adFormat: Swift.String, adapterConfig: IronSource.ISAdapterConfig, adUnitObjectId: Foundation.UUID?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(ISKidozCustomBanner) public class ISKidozCustomBanner : IronSource.ISBaseBanner, KidozSDK.KidozBannerDelegate {
+  @objc override dynamic public func loadAd(with adData: IronSource.ISAdData, viewController: UIKit.UIViewController, size: IronSource.ISBannerSize, delegate: any IronSource.ISBannerAdDelegate)
+  @objc override dynamic public func destroyAd(with adData: IronSource.ISAdData)
+  @objc public func onBannerAdLoaded(kidozBannerView: KidozSDK.KidozBannerView)
+  @objc public func onBannerAdFailedToLoad(kidozBannerView: KidozSDK.KidozBannerView, error: KidozSDK.KidozError)
+  @objc public func onBannerAdShown(kidozBannerView: KidozSDK.KidozBannerView)
+  @objc public func onBannerAdFailedToShow(kidozBannerView: KidozSDK.KidozBannerView, error: KidozSDK.KidozError)
+  @objc public func onBannerAdImpression(kidozBannerView: KidozSDK.KidozBannerView)
+  @objc public func onBannerAdClosed(kidozBannerView: KidozSDK.KidozBannerView)
+  @objc override dynamic public init(_ providerConfig: IronSource.ISAdapterConfig)
+  @objc override dynamic public init(adFormat: Swift.String, adapterConfig: IronSource.ISAdapterConfig)
+  @objc override dynamic public init(adFormat: Swift.String, adapterConfig: IronSource.ISAdapterConfig, adUnitObjectId: Foundation.UUID?)
+  @objc override dynamic public init()
+  @objc deinit
+}

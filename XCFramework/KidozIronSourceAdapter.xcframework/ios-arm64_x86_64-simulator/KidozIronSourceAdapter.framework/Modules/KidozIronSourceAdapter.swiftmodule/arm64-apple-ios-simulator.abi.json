@@ -1,0 +1,2249 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "KidozIronSourceAdapter",
+    "printedName": "KidozIronSourceAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KidozSDK",
+        "printedName": "KidozSDK",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "IronSource",
+        "printedName": "IronSource",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ISKidozCustomAdapter",
+        "printedName": "ISKidozCustomAdapter",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "`init`",
+            "printedName": "`init`(_:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "IronSource.ISAdData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ISAdData",
+                    "printedName": "IronSource.ISAdData",
+                    "usr": "c:objc(cs)ISAdData"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "(any IronSource.ISNetworkInitializationDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ISNetworkInitializationDelegate",
+                    "printedName": "any IronSource.ISNetworkInitializationDelegate",
+                    "usr": "c:objc(pl)ISNetworkInitializationDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomAdapter(im)init:delegate:",
+            "mangledName": "$s22KidozIronSourceAdapter013ISKidozCustomD0C4init_8delegateySo8ISAdDataCSg_So31ISNetworkInitializationDelegate_pSgtF",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "objc_name": "init:delegate:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initSDK",
+            "printedName": "initSDK(adData:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "IronSource.ISAdData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ISAdData",
+                    "printedName": "IronSource.ISAdData",
+                    "usr": "c:objc(cs)ISAdData"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "(any IronSource.ISNetworkInitializationDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ISNetworkInitializationDelegate",
+                    "printedName": "any IronSource.ISNetworkInitializationDelegate",
+                    "usr": "c:objc(pl)ISNetworkInitializationDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22KidozIronSourceAdapter013ISKidozCustomD0C7initSDK6adData8delegateySo04ISAdJ0CSg_So31ISNetworkInitializationDelegate_pSgtF",
+            "mangledName": "$s22KidozIronSourceAdapter013ISKidozCustomD0C7initSDK6adData8delegateySo04ISAdJ0CSg_So31ISNetworkInitializationDelegate_pSgtF",
+            "moduleName": "KidozIronSourceAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInitSuccess",
+            "printedName": "onInitSuccess()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomAdapter(im)onInitSuccess",
+            "mangledName": "$s22KidozIronSourceAdapter013ISKidozCustomD0C13onInitSuccessyyF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onInitSuccess",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInitError",
+            "printedName": "onInitError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomAdapter(im)onInitError:",
+            "mangledName": "$s22KidozIronSourceAdapter013ISKidozCustomD0C11onInitErroryySSF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onInitError:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "networkSDKVersion",
+            "printedName": "networkSDKVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomAdapter(im)networkSDKVersion",
+            "mangledName": "$s22KidozIronSourceAdapter013ISKidozCustomD0C17networkSDKVersionSSSgyF",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "objc_name": "networkSDKVersion",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adapterVersion",
+            "printedName": "adapterVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomAdapter(im)adapterVersion",
+            "mangledName": "$s22KidozIronSourceAdapter013ISKidozCustomD0C14adapterVersionSSSgyF",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "objc_name": "adapterVersion",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ISKidozCustomAdapter",
+                "printedName": "KidozIronSourceAdapter.ISKidozCustomAdapter",
+                "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomAdapter(im)init",
+            "mangledName": "$s22KidozIronSourceAdapter013ISKidozCustomD0CACycfc",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomAdapter",
+        "mangledName": "$s22KidozIronSourceAdapter013ISKidozCustomD0C",
+        "moduleName": "KidozIronSourceAdapter",
+        "objc_name": "ISKidozCustomAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)ISBaseNetworkAdapter",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "IronSource.ISBaseNetworkAdapter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "KidozInitDelegate",
+            "printedName": "KidozInitDelegate",
+            "usr": "c:@M@KidozSDK@objc(pl)KidozInitDelegate",
+            "mangledName": "$s8KidozSDK0A12InitDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SDKInitDelegate",
+            "printedName": "SDKInitDelegate",
+            "usr": "c:@M@KidozSDK@objc(pl)SDKInitDelegate",
+            "mangledName": "$s8KidozSDK15SDKInitDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KidozSDK",
+        "printedName": "KidozSDK",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KidozIronSourceSDKInfo",
+        "printedName": "KidozIronSourceSDKInfo",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getSdkVersion",
+            "printedName": "getSdkVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22KidozIronSourceAdapter0abC7SDKInfoC13getSdkVersionSSyFZ",
+            "mangledName": "$s22KidozIronSourceAdapter0abC7SDKInfoC13getSdkVersionSSyFZ",
+            "moduleName": "KidozIronSourceAdapter",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "networkSDKVersion",
+            "printedName": "networkSDKVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22KidozIronSourceAdapter0abC7SDKInfoC17networkSDKVersionSSyFZ",
+            "mangledName": "$s22KidozIronSourceAdapter0abC7SDKInfoC17networkSDKVersionSSyFZ",
+            "moduleName": "KidozIronSourceAdapter",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adapterSDKVersion",
+            "printedName": "adapterSDKVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22KidozIronSourceAdapter0abC7SDKInfoC17adapterSDKVersionSSyFZ",
+            "mangledName": "$s22KidozIronSourceAdapter0abC7SDKInfoC17adapterSDKVersionSSyFZ",
+            "moduleName": "KidozIronSourceAdapter",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KidozIronSourceSDKInfo",
+                "printedName": "KidozIronSourceAdapter.KidozIronSourceSDKInfo",
+                "usr": "c:@M@KidozIronSourceAdapter@objc(cs)KidozIronSourceSDKInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)KidozIronSourceSDKInfo(im)init",
+            "mangledName": "$s22KidozIronSourceAdapter0abC7SDKInfoCACycfc",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KidozIronSourceAdapter@objc(cs)KidozIronSourceSDKInfo",
+        "mangledName": "$s22KidozIronSourceAdapter0abC7SDKInfoC",
+        "moduleName": "KidozIronSourceAdapter",
+        "objc_name": "KidozIronSourceSDKInfo",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KidozSDK",
+        "printedName": "KidozSDK",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "IronSource",
+        "printedName": "IronSource",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ISKidozCustomRewardedVideo",
+        "printedName": "ISKidozCustomRewardedVideo",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(with:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdData",
+                "printedName": "IronSource.ISAdData",
+                "usr": "c:objc(cs)ISAdData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISRewardedVideoAdDelegate",
+                "printedName": "any IronSource.ISRewardedVideoAdDelegate",
+                "usr": "c:objc(pl)ISRewardedVideoAdDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo(im)loadAdWithAdData:delegate:",
+            "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoC6loadAd4with8delegateySo8ISAdDataC_So010ISRewardedhJ8Delegate_ptF",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "objc_name": "loadAdWithAdData:delegate:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showAd",
+            "printedName": "showAd(with:adData:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdData",
+                "printedName": "IronSource.ISAdData",
+                "usr": "c:objc(cs)ISAdData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISRewardedVideoAdDelegate",
+                "printedName": "any IronSource.ISRewardedVideoAdDelegate",
+                "usr": "c:objc(pl)ISRewardedVideoAdDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo(im)showAdWithViewController:adData:delegate:",
+            "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoC6showAd4with6adData8delegateySo16UIViewControllerC_So04ISAdM0CSo010ISRewardedhJ8Delegate_ptF",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "objc_name": "showAdWithViewController:adData:delegate:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isAdAvailable",
+            "printedName": "isAdAvailable(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdData",
+                "printedName": "IronSource.ISAdData",
+                "usr": "c:objc(cs)ISAdData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo(im)isAdAvailableWithAdData:",
+            "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoC13isAdAvailable4withSbSo8ISAdDataC_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "objc_name": "isAdAvailableWithAdData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onRewardedAdLoaded",
+            "printedName": "onRewardedAdLoaded(kidozRewardedAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozRewardedAd",
+                "printedName": "KidozSDK.KidozRewardedAd",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozRewardedAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo(im)onRewardedAdLoadedWithKidozRewardedAd:",
+            "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoC02onG8AdLoaded05kidozgJ0y0A3SDK0agJ0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onRewardedAdLoadedWithKidozRewardedAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onRewardedAdFailedToLoad",
+            "printedName": "onRewardedAdFailedToLoad(kidozError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozError",
+                "printedName": "KidozSDK.KidozError",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo(im)onRewardedAdFailedToLoadWithKidozError:",
+            "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoC02onG14AdFailedToLoad10kidozErrory0A3SDK0aO0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onRewardedAdFailedToLoadWithKidozError:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onRewardedAdShown",
+            "printedName": "onRewardedAdShown(kidozRewardedAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozRewardedAd",
+                "printedName": "KidozSDK.KidozRewardedAd",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozRewardedAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo(im)onRewardedAdShownWithKidozRewardedAd:",
+            "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoC02onG7AdShown05kidozgJ0y0A3SDK0agJ0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onRewardedAdShownWithKidozRewardedAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onRewardedAdFailedToShow",
+            "printedName": "onRewardedAdFailedToShow(kidozRewardedAd:kidozError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozRewardedAd",
+                "printedName": "KidozSDK.KidozRewardedAd",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozRewardedAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozError",
+                "printedName": "KidozSDK.KidozError",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo(im)onRewardedAdFailedToShowWithKidozRewardedAd:kidozError:",
+            "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoC02onG14AdFailedToShow05kidozgJ00N5Errory0A3SDK0agJ0C_AG0aO0CtF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onRewardedAdFailedToShowWithKidozRewardedAd:kidozError:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onRewardedImpression",
+            "printedName": "onRewardedImpression(kidozRewardedAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozRewardedAd",
+                "printedName": "KidozSDK.KidozRewardedAd",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozRewardedAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo(im)onRewardedImpressionWithKidozRewardedAd:",
+            "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoC02onG10Impression05kidozG2Ady0A3SDK0agL0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onRewardedImpressionWithKidozRewardedAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onRewardReceived",
+            "printedName": "onRewardReceived(kidozRewardedAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozRewardedAd",
+                "printedName": "KidozSDK.KidozRewardedAd",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozRewardedAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo(im)onRewardReceivedWithKidozRewardedAd:",
+            "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoC16onRewardReceived05kidozG2Ady0A3SDK0agM0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onRewardReceivedWithKidozRewardedAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onRewardedAdClosed",
+            "printedName": "onRewardedAdClosed(kidozRewardedAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozRewardedAd",
+                "printedName": "KidozSDK.KidozRewardedAd",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozRewardedAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo(im)onRewardedAdClosedWithKidozRewardedAd:",
+            "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoC02onG8AdClosed05kidozgJ0y0A3SDK0agJ0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onRewardedAdClosedWithKidozRewardedAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ISKidozCustomRewardedVideo",
+                "printedName": "KidozIronSourceAdapter.ISKidozCustomRewardedVideo",
+                "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdapterConfig",
+                "printedName": "IronSource.ISAdapterConfig",
+                "usr": "c:objc(cs)ISAdapterConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo(im)init:",
+            "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoCyACSo15ISAdapterConfigCcfc",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adFormat:adapterConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ISKidozCustomRewardedVideo",
+                "printedName": "KidozIronSourceAdapter.ISKidozCustomRewardedVideo",
+                "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdapterConfig",
+                "printedName": "IronSource.ISAdapterConfig",
+                "usr": "c:objc(cs)ISAdapterConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo(im)initWithAdFormat:adapterConfig:",
+            "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoC8adFormat13adapterConfigACSS_So09ISAdapterL0Ctcfc",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdFormat:adapterConfig:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adFormat:adapterConfig:adUnitObjectId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ISKidozCustomRewardedVideo",
+                "printedName": "KidozIronSourceAdapter.ISKidozCustomRewardedVideo",
+                "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdapterConfig",
+                "printedName": "IronSource.ISAdapterConfig",
+                "usr": "c:objc(cs)ISAdapterConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo(im)initWithAdFormat:adapterConfig:adUnitObjectId:",
+            "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoC8adFormat13adapterConfig0I12UnitObjectIdACSS_So09ISAdapterL0C10Foundation4UUIDVSgtcfc",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdFormat:adapterConfig:adUnitObjectId:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ISKidozCustomRewardedVideo",
+                "printedName": "KidozIronSourceAdapter.ISKidozCustomRewardedVideo",
+                "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo(im)init",
+            "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoCACycfc",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomRewardedVideo",
+        "mangledName": "$s22KidozIronSourceAdapter26ISKidozCustomRewardedVideoC",
+        "moduleName": "KidozIronSourceAdapter",
+        "objc_name": "ISKidozCustomRewardedVideo",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)ISBaseRewardedVideo",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "IronSource.ISBaseRewardedVideo",
+          "IronSource.ISBaseAdInteractionAdapter",
+          "IronSource.ISBaseAdAdapter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "KidozRewardedDelegate",
+            "printedName": "KidozRewardedDelegate",
+            "usr": "c:@M@KidozSDK@objc(pl)KidozRewardedDelegate",
+            "mangledName": "$s8KidozSDK0A16RewardedDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KidozSDK",
+        "printedName": "KidozSDK",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "IronSource",
+        "printedName": "IronSource",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ISKidozCustomInterstitial",
+        "printedName": "ISKidozCustomInterstitial",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(with:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdData",
+                "printedName": "IronSource.ISAdData",
+                "usr": "c:objc(cs)ISAdData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISInterstitialAdDelegate",
+                "printedName": "any IronSource.ISInterstitialAdDelegate",
+                "usr": "c:objc(pl)ISInterstitialAdDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial(im)loadAdWithAdData:delegate:",
+            "mangledName": "$s22KidozIronSourceAdapter25ISKidozCustomInterstitialC6loadAd4with8delegateySo8ISAdDataC_So014ISInterstitialI8Delegate_ptF",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "objc_name": "loadAdWithAdData:delegate:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showAd",
+            "printedName": "showAd(with:adData:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdData",
+                "printedName": "IronSource.ISAdData",
+                "usr": "c:objc(cs)ISAdData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISInterstitialAdDelegate",
+                "printedName": "any IronSource.ISInterstitialAdDelegate",
+                "usr": "c:objc(pl)ISInterstitialAdDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial(im)showAdWithViewController:adData:delegate:",
+            "mangledName": "$s22KidozIronSourceAdapter25ISKidozCustomInterstitialC6showAd4with6adData8delegateySo16UIViewControllerC_So04ISAdL0CSo014ISInterstitialI8Delegate_ptF",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "objc_name": "showAdWithViewController:adData:delegate:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isAdAvailable",
+            "printedName": "isAdAvailable(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdData",
+                "printedName": "IronSource.ISAdData",
+                "usr": "c:objc(cs)ISAdData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial(im)isAdAvailableWithAdData:",
+            "mangledName": "$s22KidozIronSourceAdapter25ISKidozCustomInterstitialC13isAdAvailable4withSbSo8ISAdDataC_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "objc_name": "isAdAvailableWithAdData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInterstitialAdLoaded",
+            "printedName": "onInterstitialAdLoaded(kidozInterstitialAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozInterstitialAd",
+                "printedName": "KidozSDK.KidozInterstitialAd",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozInterstitialAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial(im)onInterstitialAdLoadedWithKidozInterstitialAd:",
+            "mangledName": "$s22KidozIronSourceAdapter25ISKidozCustomInterstitialC02onG8AdLoaded05kidozgI0y0A3SDK0agI0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onInterstitialAdLoadedWithKidozInterstitialAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInterstitialAdFailedToLoad",
+            "printedName": "onInterstitialAdFailedToLoad(kidozError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozError",
+                "printedName": "KidozSDK.KidozError",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial(im)onInterstitialAdFailedToLoadWithKidozError:",
+            "mangledName": "$s22KidozIronSourceAdapter25ISKidozCustomInterstitialC02onG14AdFailedToLoad10kidozErrory0A3SDK0aN0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onInterstitialAdFailedToLoadWithKidozError:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInterstitialAdShown",
+            "printedName": "onInterstitialAdShown(kidozInterstitialAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozInterstitialAd",
+                "printedName": "KidozSDK.KidozInterstitialAd",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozInterstitialAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial(im)onInterstitialAdShownWithKidozInterstitialAd:",
+            "mangledName": "$s22KidozIronSourceAdapter25ISKidozCustomInterstitialC02onG7AdShown05kidozgI0y0A3SDK0agI0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onInterstitialAdShownWithKidozInterstitialAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInterstitialAdFailedToShow",
+            "printedName": "onInterstitialAdFailedToShow(kidozInterstitialAd:kidozError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozInterstitialAd",
+                "printedName": "KidozSDK.KidozInterstitialAd",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozInterstitialAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozError",
+                "printedName": "KidozSDK.KidozError",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial(im)onInterstitialAdFailedToShowWithKidozInterstitialAd:kidozError:",
+            "mangledName": "$s22KidozIronSourceAdapter25ISKidozCustomInterstitialC02onG14AdFailedToShow05kidozgI00M5Errory0A3SDK0agI0C_AG0aN0CtF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onInterstitialAdFailedToShowWithKidozInterstitialAd:kidozError:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInterstitialImpression",
+            "printedName": "onInterstitialImpression(kidozInterstitialAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozInterstitialAd",
+                "printedName": "KidozSDK.KidozInterstitialAd",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozInterstitialAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial(im)onInterstitialImpressionWithKidozInterstitialAd:",
+            "mangledName": "$s22KidozIronSourceAdapter25ISKidozCustomInterstitialC02onG10Impression05kidozG2Ady0A3SDK0agK0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onInterstitialImpressionWithKidozInterstitialAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInterstitialAdClosed",
+            "printedName": "onInterstitialAdClosed(kidozInterstitialAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozInterstitialAd",
+                "printedName": "KidozSDK.KidozInterstitialAd",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozInterstitialAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial(im)onInterstitialAdClosedWithKidozInterstitialAd:",
+            "mangledName": "$s22KidozIronSourceAdapter25ISKidozCustomInterstitialC02onG8AdClosed05kidozgI0y0A3SDK0agI0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onInterstitialAdClosedWithKidozInterstitialAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ISKidozCustomInterstitial",
+                "printedName": "KidozIronSourceAdapter.ISKidozCustomInterstitial",
+                "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdapterConfig",
+                "printedName": "IronSource.ISAdapterConfig",
+                "usr": "c:objc(cs)ISAdapterConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial(im)init:",
+            "mangledName": "$s22KidozIronSourceAdapter25ISKidozCustomInterstitialCyACSo15ISAdapterConfigCcfc",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adFormat:adapterConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ISKidozCustomInterstitial",
+                "printedName": "KidozIronSourceAdapter.ISKidozCustomInterstitial",
+                "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdapterConfig",
+                "printedName": "IronSource.ISAdapterConfig",
+                "usr": "c:objc(cs)ISAdapterConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial(im)initWithAdFormat:adapterConfig:",
+            "mangledName": "$s22KidozIronSourceAdapter25ISKidozCustomInterstitialC8adFormat13adapterConfigACSS_So09ISAdapterK0Ctcfc",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdFormat:adapterConfig:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adFormat:adapterConfig:adUnitObjectId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ISKidozCustomInterstitial",
+                "printedName": "KidozIronSourceAdapter.ISKidozCustomInterstitial",
+                "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdapterConfig",
+                "printedName": "IronSource.ISAdapterConfig",
+                "usr": "c:objc(cs)ISAdapterConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial(im)initWithAdFormat:adapterConfig:adUnitObjectId:",
+            "mangledName": "$s22KidozIronSourceAdapter25ISKidozCustomInterstitialC8adFormat13adapterConfig0H12UnitObjectIdACSS_So09ISAdapterK0C10Foundation4UUIDVSgtcfc",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdFormat:adapterConfig:adUnitObjectId:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ISKidozCustomInterstitial",
+                "printedName": "KidozIronSourceAdapter.ISKidozCustomInterstitial",
+                "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial(im)init",
+            "mangledName": "$s22KidozIronSourceAdapter25ISKidozCustomInterstitialCACycfc",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomInterstitial",
+        "mangledName": "$s22KidozIronSourceAdapter25ISKidozCustomInterstitialC",
+        "moduleName": "KidozIronSourceAdapter",
+        "objc_name": "ISKidozCustomInterstitial",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)ISBaseInterstitial",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "IronSource.ISBaseInterstitial",
+          "IronSource.ISBaseAdInteractionAdapter",
+          "IronSource.ISBaseAdAdapter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "KidozInterstitialDelegate",
+            "printedName": "KidozInterstitialDelegate",
+            "usr": "c:@M@KidozSDK@objc(pl)KidozInterstitialDelegate",
+            "mangledName": "$s8KidozSDK0A20InterstitialDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "KidozSDK",
+        "printedName": "KidozSDK",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "IronSource",
+        "printedName": "IronSource",
+        "declKind": "Import",
+        "moduleName": "KidozIronSourceAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ISKidozCustomBanner",
+        "printedName": "ISKidozCustomBanner",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(with:viewController:size:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdData",
+                "printedName": "IronSource.ISAdData",
+                "usr": "c:objc(cs)ISAdData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISBannerSize",
+                "printedName": "IronSource.ISBannerSize",
+                "usr": "c:objc(cs)ISBannerSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISBannerAdDelegate",
+                "printedName": "any IronSource.ISBannerAdDelegate",
+                "usr": "c:objc(pl)ISBannerAdDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner(im)loadAdWithAdData:viewController:size:delegate:",
+            "mangledName": "$s22KidozIronSourceAdapter19ISKidozCustomBannerC6loadAd4with14viewController4size8delegateySo8ISAdDataC_So06UIViewL0CSo12ISBannerSizeCSo0rI8Delegate_ptF",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "objc_name": "loadAdWithAdData:viewController:size:delegate:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroyAd",
+            "printedName": "destroyAd(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdData",
+                "printedName": "IronSource.ISAdData",
+                "usr": "c:objc(cs)ISAdData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner(im)destroyAdWithAdData:",
+            "mangledName": "$s22KidozIronSourceAdapter19ISKidozCustomBannerC9destroyAd4withySo8ISAdDataC_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "objc_name": "destroyAdWithAdData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onBannerAdLoaded",
+            "printedName": "onBannerAdLoaded(kidozBannerView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozBannerView",
+                "printedName": "KidozSDK.KidozBannerView",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner(im)onBannerAdLoadedWithKidozBannerView:",
+            "mangledName": "$s22KidozIronSourceAdapter19ISKidozCustomBannerC02onG8AdLoaded05kidozG4Viewy0A3SDK0agL0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onBannerAdLoadedWithKidozBannerView:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onBannerAdFailedToLoad",
+            "printedName": "onBannerAdFailedToLoad(kidozBannerView:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozBannerView",
+                "printedName": "KidozSDK.KidozBannerView",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozBannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozError",
+                "printedName": "KidozSDK.KidozError",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner(im)onBannerAdFailedToLoadWithKidozBannerView:error:",
+            "mangledName": "$s22KidozIronSourceAdapter19ISKidozCustomBannerC02onG14AdFailedToLoad05kidozG4View5errory0A3SDK0agN0C_AG0A5ErrorCtF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onBannerAdFailedToLoadWithKidozBannerView:error:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onBannerAdShown",
+            "printedName": "onBannerAdShown(kidozBannerView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozBannerView",
+                "printedName": "KidozSDK.KidozBannerView",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner(im)onBannerAdShownWithKidozBannerView:",
+            "mangledName": "$s22KidozIronSourceAdapter19ISKidozCustomBannerC02onG7AdShown05kidozG4Viewy0A3SDK0agL0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onBannerAdShownWithKidozBannerView:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onBannerAdFailedToShow",
+            "printedName": "onBannerAdFailedToShow(kidozBannerView:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozBannerView",
+                "printedName": "KidozSDK.KidozBannerView",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozBannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozError",
+                "printedName": "KidozSDK.KidozError",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner(im)onBannerAdFailedToShowWithKidozBannerView:error:",
+            "mangledName": "$s22KidozIronSourceAdapter19ISKidozCustomBannerC02onG14AdFailedToShow05kidozG4View5errory0A3SDK0agN0C_AG0A5ErrorCtF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onBannerAdFailedToShowWithKidozBannerView:error:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onBannerAdImpression",
+            "printedName": "onBannerAdImpression(kidozBannerView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozBannerView",
+                "printedName": "KidozSDK.KidozBannerView",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner(im)onBannerAdImpressionWithKidozBannerView:",
+            "mangledName": "$s22KidozIronSourceAdapter19ISKidozCustomBannerC02onG12AdImpression05kidozG4Viewy0A3SDK0agL0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onBannerAdImpressionWithKidozBannerView:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onBannerAdClosed",
+            "printedName": "onBannerAdClosed(kidozBannerView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozBannerView",
+                "printedName": "KidozSDK.KidozBannerView",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner(im)onBannerAdClosedWithKidozBannerView:",
+            "mangledName": "$s22KidozIronSourceAdapter19ISKidozCustomBannerC02onG8AdClosed05kidozG4Viewy0A3SDK0agL0C_tF",
+            "moduleName": "KidozIronSourceAdapter",
+            "objc_name": "onBannerAdClosedWithKidozBannerView:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ISKidozCustomBanner",
+                "printedName": "KidozIronSourceAdapter.ISKidozCustomBanner",
+                "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdapterConfig",
+                "printedName": "IronSource.ISAdapterConfig",
+                "usr": "c:objc(cs)ISAdapterConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner(im)init:",
+            "mangledName": "$s22KidozIronSourceAdapter19ISKidozCustomBannerCyACSo15ISAdapterConfigCcfc",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adFormat:adapterConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ISKidozCustomBanner",
+                "printedName": "KidozIronSourceAdapter.ISKidozCustomBanner",
+                "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdapterConfig",
+                "printedName": "IronSource.ISAdapterConfig",
+                "usr": "c:objc(cs)ISAdapterConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner(im)initWithAdFormat:adapterConfig:",
+            "mangledName": "$s22KidozIronSourceAdapter19ISKidozCustomBannerC8adFormat13adapterConfigACSS_So09ISAdapterK0Ctcfc",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdFormat:adapterConfig:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adFormat:adapterConfig:adUnitObjectId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ISKidozCustomBanner",
+                "printedName": "KidozIronSourceAdapter.ISKidozCustomBanner",
+                "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ISAdapterConfig",
+                "printedName": "IronSource.ISAdapterConfig",
+                "usr": "c:objc(cs)ISAdapterConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner(im)initWithAdFormat:adapterConfig:adUnitObjectId:",
+            "mangledName": "$s22KidozIronSourceAdapter19ISKidozCustomBannerC8adFormat13adapterConfig0H12UnitObjectIdACSS_So09ISAdapterK0C10Foundation4UUIDVSgtcfc",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithAdFormat:adapterConfig:adUnitObjectId:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ISKidozCustomBanner",
+                "printedName": "KidozIronSourceAdapter.ISKidozCustomBanner",
+                "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner(im)init",
+            "mangledName": "$s22KidozIronSourceAdapter19ISKidozCustomBannerCACycfc",
+            "moduleName": "KidozIronSourceAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KidozIronSourceAdapter@objc(cs)ISKidozCustomBanner",
+        "mangledName": "$s22KidozIronSourceAdapter19ISKidozCustomBannerC",
+        "moduleName": "KidozIronSourceAdapter",
+        "objc_name": "ISKidozCustomBanner",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)ISBaseBanner",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "IronSource.ISBaseBanner",
+          "IronSource.ISBaseAdAdapter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "KidozBannerDelegate",
+            "printedName": "KidozBannerDelegate",
+            "usr": "c:@M@KidozSDK@objc(pl)KidozBannerDelegate",
+            "mangledName": "$s8KidozSDK0A14BannerDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
