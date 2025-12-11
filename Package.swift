@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependency on core SDK
-        .package(url: "https://github.com/Kidoz-SDK/kidozsdk-swift-package.git", from: "10.1.3")
+        .package(url: "https://github.com/Kidoz-SDK/core-sdk-swift-package.git", from: "10.1.3")
     ],
     targets: [
         .binaryTarget(
