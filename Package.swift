@@ -14,7 +14,9 @@ let package = Package(
     ],
     dependencies: [
         // Dependency on core SDK
-        .package(url: "https://github.com/Kidoz-SDK/kidoz-sdk-swift-package.git", from: "10.1.3")
+        .package(url: "https://github.com/Kidoz-SDK/kidoz-sdk-swift-package.git", from: "10.1.3"),
+        // Dependency on mediation network SDK
+        .package(url: "https://github.com/ironsource-mobile/LevelPlay-Swift-Package", from: "9.0.0")
     ],
     targets: [
         
@@ -22,6 +24,7 @@ let package = Package(
             name: "KidozIronSourceAdapterTarget",
             dependencies: [
                 .product(name: "KidozSDK", package: "kidoz-sdk-swift-package"),
+                .product(name: "UnityMediationSDK", package: "LevelPlay-Swift-Package"),
                 "KidozIronSourceAdapter"
             ]
         ),
